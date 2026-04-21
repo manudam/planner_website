@@ -1,17 +1,34 @@
-const STORE_LINKS = {
-  iphone: "",
-  android: "",
-  windows: "",
-  mac: "",
-  web: "https://app.plannerpig.com/",
-};
-
-const STORE_LABELS = {
-  iphone: "iPhone",
-  android: "Android",
-  windows: "Windows",
-  mac: "Mac",
-  web: "Web",
+const STORE_CONFIG = {
+  iphone: {
+    label: "iPhone",
+    url: "",
+    pendingLabel: "Coming soon",
+    pendingAriaLabel: "iPhone release coming soon",
+  },
+  android: {
+    label: "Android",
+    url: "",
+    pendingLabel: "Coming soon",
+    pendingAriaLabel: "Android release coming soon",
+  },
+  windows: {
+    label: "Windows",
+    url: "",
+    pendingLabel: "Coming soon",
+    pendingAriaLabel: "Windows release coming soon",
+  },
+  mac: {
+    label: "Mac",
+    url: "",
+    pendingLabel: "Coming soon",
+    pendingAriaLabel: "Mac release coming soon",
+  },
+  web: {
+    label: "Web",
+    url: "https://app.plannerpig.com/",
+    liveLabel: "Live now",
+    liveAriaLabel: "Open Planner Pig on the web",
+  },
 };
 
 function setupStoreLinks() {
@@ -21,7 +38,13 @@ function setupStoreLinks() {
   cards.forEach((card) => {
     const key = card.dataset.store;
     const status = card.querySelector(".platform-status");
-    const url = (STORE_LINKS[key] || "").trim();
+    const config = STORE_CONFIG[key];
+
+    if (!config) {
+      return;
+    }
+
+    const url = (config.url || "").trim();
 
     if (url) {
       card.href = url;
@@ -33,8 +56,10 @@ function setupStoreLinks() {
       card.removeAttribute("aria-label");
 
       if (status) {
-        status.textContent = "Live now";
+        status.textContent = config.liveLabel || "Live now";
       }
+
+      card.setAttribute("aria-label", config.liveAriaLabel || `Open ${config.label}`);
 
       return;
     }
@@ -45,10 +70,10 @@ function setupStoreLinks() {
     card.classList.add("is-pending");
     card.classList.remove("is-live");
     card.setAttribute("aria-disabled", "true");
-    card.setAttribute("aria-label", `${STORE_LABELS[key]} coming soon`);
+    card.setAttribute("aria-label", config.pendingAriaLabel || `${config.label} coming soon`);
 
     if (status) {
-      status.textContent = "Coming soon";
+      status.textContent = config.pendingLabel || "Coming soon";
     }
   });
 }
