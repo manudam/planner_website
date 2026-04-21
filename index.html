@@ -3,122 +3,515 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Planner Pig is launching soon on iOS, Android, and Windows. Track launch status and store availability.">
-  <meta property="og:title" content="Planner Pig | Coming Soon">
-  <meta property="og:description" content="A professional study planner is launching soon. Store links will be published here first.">
+  <meta
+    name="description"
+    content="Planner Pig is a cross-platform study planner for exam prep. Build study plans, manage tasks, track progress, stay accountable with buddies, and get ready for launch on iPhone, Android, Windows, Mac, and Web."
+  >
+  <meta property="og:title" content="Planner Pig | Exam Planning Across Every Device">
+  <meta
+    property="og:description"
+    content="Showcase the full Planner Pig workflow: exam planning, tasks, progress, analytics, reminders, and social accountability."
+  >
   <meta property="og:type" content="website">
   <meta property="og:image" content="assets/images/screen-social.png">
   <meta property="og:url" content="https://www.plannerpig.com/">
-  <title>Planner Pig | Coming Soon</title>
+  <title>Planner Pig | Complete Study Planning, Coming Soon</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+    rel="stylesheet"
+  >
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body data-coming-soon-url="#launch-status">
-  <div class="aurora aurora-left" aria-hidden="true"></div>
-  <div class="aurora aurora-right" aria-hidden="true"></div>
+<body data-coming-soon-url="#platforms">
+  <div class="background-orb background-orb-a" aria-hidden="true"></div>
+  <div class="background-orb background-orb-b" aria-hidden="true"></div>
+  <div class="background-grid" aria-hidden="true"></div>
 
   <header class="site-header">
-    <a class="brand" href="index.html" aria-label="Planner Pig home">
-      <img src="assets/images/app-icon-1024.png" alt="Planner Pig logo" class="brand-logo">
-      <span class="brand-name">Planner Pig</span>
-    </a>
-    <a class="status-pill" href="#launch-status">Launch window: Spring 2026</a>
+    <div class="header-shell">
+      <a class="brand" href="#top" aria-label="Planner Pig home">
+        <img src="assets/images/app-icon-1024.png" alt="Planner Pig logo" class="brand-logo">
+        <span class="brand-copy">
+          <span class="brand-name">Planner Pig</span>
+          <span class="brand-tag">Professional study planner</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="visually-hidden">Toggle navigation</span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <a href="#how-it-works">How it works</a>
+        <a href="#features">Features</a>
+        <a href="#showcase">Showcase</a>
+        <a href="#platforms">Platforms</a>
+        <a href="#faq">FAQ</a>
+        <a class="nav-cta" href="mailto:plannerpig@trianglecarrot.com?subject=Planner%20Pig%20launch%20updates">Get launch updates</a>
+      </nav>
+    </div>
   </header>
 
-  <main class="page-shell">
-    <section class="hero panel reveal">
-      <div class="hero-copy">
-        <p class="eyebrow">Professional Study Planner</p>
-        <h1>Planner Pig is launching soon.</h1>
-        <p class="lead">We are rebuilding the experience for iOS, Android, and Windows with faster planning, cleaner progress tracking, and better consistency across devices.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#launch-status">Check launch status</a>
-          <a class="btn btn-secondary" href="mailto:plannerpig@trianglecarrot.com?subject=Planner%20Pig%20launch%20updates">Request early access</a>
-        </div>
-      </div>
+  <main id="top">
+    <section class="hero section">
+      <div class="section-shell hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Coming soon on iPhone, Android, Windows, Mac, and Web</p>
+          <h1>Turn exam pressure into a study plan you can actually follow.</h1>
+          <p class="lead">
+            Planner Pig helps students build realistic revision timetables, turn topics into actionable tasks,
+            update progress every day, and stay accountable with clear analytics and buddy features.
+          </p>
 
-      <div class="hero-side" aria-hidden="true">
-        <div class="hero-side-top">
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="hero-side-title">Release readiness</span>
-        </div>
-        <div class="hero-side-body">
-          <div class="metric-row">
-            <span>Platform build checks</span>
-            <strong>92%</strong>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#features">Explore the product</a>
+            <a class="btn btn-secondary" href="#platforms">See launch platforms</a>
+            <a class="btn btn-ghost" href="mailto:plannerpig@trianglecarrot.com?subject=Planner%20Pig%20early%20access">Request early access</a>
           </div>
-          <div class="track"><span class="bar bar-a"></span></div>
-          <div class="metric-row">
-            <span>Store listing prep</span>
-            <strong>In progress</strong>
-          </div>
-          <div class="track"><span class="bar bar-b"></span></div>
-          <ul class="mini-list">
-            <li>Final UX polish</li>
-            <li>Submission package QA</li>
-            <li>Public release assets</li>
+
+          <ul class="hero-points" aria-label="Planner Pig highlights">
+            <li>Plan exams with topics, weights, and study hours that fit your schedule.</li>
+            <li>See monthly, weekly, and daily study views in one workflow.</li>
+            <li>Track task progress, reminders, history, and study stats.</li>
+            <li>Share momentum with buddies through Social Squirrel.</li>
           </ul>
         </div>
+
+        <div class="hero-stage reveal delay-1" aria-label="Planner Pig app preview">
+          <div class="hero-status-card">
+            <div class="status-line">
+              <span class="status-kicker">Launch mode</span>
+              <span class="status-pill">Available soon</span>
+            </div>
+            <h2>One study system across every device.</h2>
+            <p>
+              Build your plan once, then keep moving through planning, execution, progress tracking,
+              analytics, and social accountability wherever you study.
+            </p>
+            <div class="hero-metrics">
+              <div>
+                <strong>5</strong>
+                <span>platforms</span>
+              </div>
+              <div>
+                <strong>10</strong>
+                <span>max exams</span>
+              </div>
+              <div>
+                <strong>Daily</strong>
+                <span>study flow</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="device-cluster">
+            <figure class="device-shot device-main">
+              <img src="assets/images/screen-planner.png" alt="Planner Pig monthly planning screen">
+            </figure>
+            <figure class="device-shot device-side">
+              <img src="assets/images/screen-progress.png" alt="Progress Panther daily progress screen">
+            </figure>
+            <figure class="device-shot device-side-back">
+              <img src="assets/images/screen-social.png" alt="Social Squirrel buddy feed screen">
+            </figure>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="launch-status" class="panel reveal delay-1">
-      <div class="section-head">
-        <p class="eyebrow">Launch Status</p>
-        <h2>Store links will go live here first.</h2>
-      </div>
-      <p class="section-copy">Each button changes from <strong>Coming soon</strong> to <strong>Live now</strong> automatically as soon as you add the official store URL in <code>main.js</code>.</p>
-
-      <div class="store-grid">
-        <a class="store-link" data-store="appStore" href="#launch-status">
-          <span class="store-name">App Store</span>
-          <span class="store-status">Coming soon</span>
-        </a>
-        <a class="store-link" data-store="googlePlay" href="#launch-status">
-          <span class="store-name">Google Play</span>
-          <span class="store-status">Coming soon</span>
-        </a>
-        <a class="store-link" data-store="microsoftStore" href="#launch-status">
-          <span class="store-name">Microsoft Store</span>
-          <span class="store-status">Coming soon</span>
-        </a>
+    <section class="section section-tight">
+      <div class="section-shell">
+        <div class="signal-bar reveal">
+          <div class="signal-copy">
+            <p class="eyebrow">Built Around The Real App</p>
+            <h2>The website mirrors the product’s actual workflow.</h2>
+          </div>
+          <div class="signal-tags" aria-label="Planner Pig app areas">
+            <span>Planner Pig</span>
+            <span>Overview Owl</span>
+            <span>Calendar Cat</span>
+            <span>List Lemur</span>
+            <span>Progress Panther</span>
+            <span>History Horse</span>
+            <span>Bar Chart Bear</span>
+            <span>Social Squirrel</span>
+            <span>Notifications</span>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="details" class="detail-grid reveal delay-2">
-      <article class="panel detail-card">
-        <h3>What users can expect</h3>
-        <ul class="checklist">
-          <li>Smart study scheduling built for exam preparation.</li>
-          <li>Clear daily and weekly progress visibility.</li>
-          <li>A consistent Planner Pig workflow on every platform.</li>
-        </ul>
-      </article>
+    <section class="section" id="how-it-works">
+      <div class="section-shell">
+        <div class="section-heading reveal">
+          <p class="eyebrow">How It Works</p>
+          <h2>A study workflow designed to keep momentum from setup to exam day.</h2>
+          <p>
+            Planner Pig is not just a timetable generator. It helps you create a plan, turn it into work you can
+            actually complete, and keep adjusting when real life gets in the way.
+          </p>
+        </div>
 
-      <article class="panel detail-card">
-        <h3>Rollout milestones</h3>
-        <ol class="timeline">
-          <li><span class="step done">Done</span> Website launch page deployed.</li>
-          <li><span class="step current">Current</span> Final app packaging and submission checks.</li>
-          <li><span class="step">Next</span> Store approvals and public release links.</li>
-        </ol>
-      </article>
+        <div class="workflow-grid">
+          <article class="workflow-card reveal">
+            <span class="workflow-step">01</span>
+            <h3>Build your exam plan</h3>
+            <p>
+              Add your exams, set dates, create topics, assign topic weightings, and define the study hours you
+              realistically have each week.
+            </p>
+            <ul>
+              <li>Exam setup wizard</li>
+              <li>Topic breakdowns and timetables</li>
+              <li>Monthly planning view</li>
+            </ul>
+          </article>
 
-      <article id="contact" class="panel detail-card">
-        <h3>Need launch updates?</h3>
-        <p>For partnerships, school programs, or early-access requests, contact the team directly.</p>
-        <a class="text-link" href="mailto:plannerpig@trianglecarrot.com">plannerpig@trianglecarrot.com</a>
-      </article>
+          <article class="workflow-card reveal delay-1">
+            <span class="workflow-step">02</span>
+            <h3>Study with daily clarity</h3>
+            <p>
+              Switch from planning into action with Calendar Cat, List Lemur, and Progress Panther so every study
+              session has structure.
+            </p>
+            <ul>
+              <li>Session-by-session calendar guidance</li>
+              <li>Task lists for each topic</li>
+              <li>Daily progress updates and rescheduling</li>
+            </ul>
+          </article>
+
+          <article class="workflow-card reveal delay-2">
+            <span class="workflow-step">03</span>
+            <h3>Track momentum and stay accountable</h3>
+            <p>
+              Review what changed this week, monitor your study history, unlock richer progress stats, and share
+              selected activity with buddies.
+            </p>
+            <ul>
+              <li>Weekly overview and history</li>
+              <li>Progress charts and study status</li>
+              <li>Buddy requests, profiles, and feed activity</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="section-shell">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Feature Stories</p>
+          <h2>Everything the app does, shown in the order students actually use it.</h2>
+        </div>
+
+        <article class="feature-story reveal">
+          <div class="feature-copy">
+            <p class="story-kicker">Planner Pig + List Lemur</p>
+            <h3>Start with a realistic plan, not a blank page.</h3>
+            <p>
+              The planning engine helps you shape an exam schedule around available time, then List Lemur lets you
+              break big topics into practical tasks such as reading, revision questions, or summary notes.
+            </p>
+            <ul class="feature-list">
+              <li>Create exams, topics, and timetable rules.</li>
+              <li>Adjust topic hours to fit the time you really have.</li>
+              <li>Turn planned study into milestone-based task lists.</li>
+            </ul>
+          </div>
+          <div class="feature-media">
+            <img src="assets/images/screen-setup.png" alt="Planner Pig exam setup screen">
+          </div>
+        </article>
+
+        <article class="feature-story feature-story-reverse reveal">
+          <div class="feature-copy">
+            <p class="story-kicker">Calendar Cat + Progress Panther</p>
+            <h3>Know what to study today and what to do if you fall behind.</h3>
+            <p>
+              Calendar Cat shows planned sessions, while Progress Panther expands that into a daily action view with
+              tasks, completion controls, and catch-up tools for unfinished work.
+            </p>
+            <ul class="feature-list">
+              <li>View upcoming sessions by exam and date.</li>
+              <li>Tick off completed tasks and log progress.</li>
+              <li>Reschedule outstanding study when plans change.</li>
+            </ul>
+          </div>
+          <div class="feature-media">
+            <img src="assets/images/screen-progress.png" alt="Progress Panther dashboard">
+          </div>
+        </article>
+
+        <article class="feature-story reveal">
+          <div class="feature-copy">
+            <p class="story-kicker">Overview Owl + History Horse + Bar Chart Bear</p>
+            <h3>See your momentum without digging through your whole plan.</h3>
+            <p>
+              Planner Pig surfaces what matters now: what you studied recently, what is next, how many hours you are
+              actually completing, and how your long-term progress is building over time.
+            </p>
+            <ul class="feature-list">
+              <li>Weekly overview of achievements and upcoming work.</li>
+              <li>History log for completed tasks, milestones, and Bear Tokens.</li>
+              <li>Progress charts that grow with your Studier Status.</li>
+            </ul>
+          </div>
+          <div class="feature-media">
+            <img src="assets/images/screen-dashboard.png" alt="Overview Owl dashboard showing recent study momentum">
+          </div>
+        </article>
+
+        <article class="feature-story feature-story-reverse reveal">
+          <div class="feature-copy">
+            <p class="story-kicker">Social Squirrel + Notifications + My Account</p>
+            <h3>Stay motivated with reminders, buddy activity, and a profile that travels with you.</h3>
+            <p>
+              Planner Pig supports sign-in, profile setup, notification preferences, and a social layer for buddy
+              requests, shared snapshots, and realtime motivation.
+            </p>
+            <ul class="feature-list">
+              <li>Buddy requests and profile views.</li>
+              <li>Realtime social feed with progress snapshots.</li>
+              <li>Regular, follow-up, and buddy notification settings.</li>
+            </ul>
+          </div>
+          <div class="feature-media">
+            <img src="assets/images/screen-social.png" alt="Social Squirrel buddy profile and activity">
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-contrast">
+      <div class="section-shell">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Inside The Product</p>
+          <h2>Every named area of the app has a clear job.</h2>
+          <p>
+            The animal-led navigation is more than branding. Each screen focuses on a specific part of the study loop
+            so the product stays understandable as your workload grows.
+          </p>
+        </div>
+
+        <div class="product-grid">
+          <article class="product-card reveal">
+            <h3 class="product-title"><img src="assets/images/page-icons/planner-pig.png" alt="" class="product-icon">Planner Pig</h3>
+            <p>Set up exams, topics, study hours, monthly commitments, and the plan engine itself.</p>
+          </article>
+          <article class="product-card reveal delay-1">
+            <h3 class="product-title"><img src="assets/images/page-icons/overview-owl.png" alt="" class="product-icon">Overview Owl</h3>
+            <p>See last studied activity, weekly achievements, and what is coming next at a glance.</p>
+          </article>
+          <article class="product-card reveal delay-2">
+            <h3 class="product-title"><img src="assets/images/page-icons/calendar-cat.png" alt="" class="product-icon">Calendar Cat</h3>
+            <p>Review scheduled sessions, topic pacing, and upcoming study blocks in calendar form.</p>
+          </article>
+          <article class="product-card reveal">
+            <h3 class="product-title"><img src="assets/images/page-icons/list-lemur.png" alt="" class="product-icon">List Lemur</h3>
+            <p>Break topics into practical tasks that turn broad revision goals into concrete actions.</p>
+          </article>
+          <article class="product-card reveal delay-1">
+            <h3 class="product-title"><img src="assets/images/page-icons/progress-panther.png" alt="" class="product-icon">Progress Panther</h3>
+            <p>Update daily progress, mark work complete, and recover from missed study time.</p>
+          </article>
+          <article class="product-card reveal delay-2">
+            <h3 class="product-title"><img src="assets/images/page-icons/history-horse.png" alt="" class="product-icon">History Horse</h3>
+            <p>Track completed work, milestones, and token-style rewards for staying consistent.</p>
+          </article>
+          <article class="product-card reveal">
+            <h3 class="product-title"><img src="assets/images/page-icons/bar-chart-bear.png" alt="" class="product-icon">Bar Chart Bear</h3>
+            <p>Monitor exam-by-exam progress with clearer charting as your study status climbs.</p>
+          </article>
+          <article class="product-card reveal delay-1">
+            <h3 class="product-title"><img src="assets/images/page-icons/social-squirrel.png" alt="" class="product-icon">Social Squirrel</h3>
+            <p>Connect with buddies, compare snapshots, and stay motivated through shared progress.</p>
+          </article>
+          <article class="product-card reveal delay-2">
+            <h3 class="product-title"><img src="assets/images/page-icons/support-tools.png" alt="" class="product-icon">Support Tools</h3>
+            <p>Manage reminders, profiles, contextual help, account settings, and direct contact options.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="showcase">
+      <div class="section-shell">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Showcase</p>
+          <h2>A closer look at the Planner Pig experience.</h2>
+        </div>
+
+        <div class="gallery-grid">
+          <figure class="gallery-card reveal">
+            <img src="assets/images/screen-planner.png" alt="Planner Pig monthly planner screen">
+            <figcaption>Monthly planner view</figcaption>
+          </figure>
+          <figure class="gallery-card reveal delay-1">
+            <img src="assets/images/screen-progress.png" alt="Progress Panther task and progress screen">
+            <figcaption>Daily progress dashboard</figcaption>
+          </figure>
+          <figure class="gallery-card reveal delay-2">
+            <img src="assets/images/screen-social.png" alt="Social Squirrel profile and activity screen">
+            <figcaption>Buddy profile and activity</figcaption>
+          </figure>
+          <figure class="gallery-card reveal">
+            <img src="assets/images/screen-setup.png" alt="Planner Pig exam and topic setup">
+            <figcaption>Exam and topic setup</figcaption>
+          </figure>
+          <figure class="gallery-card reveal delay-1">
+            <img src="assets/images/screen-dashboard.png" alt="Overview Owl dashboard screen">
+            <figcaption>Overview and weekly momentum</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="platforms">
+      <div class="section-shell">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Platforms</p>
+          <h2>The same Planner Pig workflow, wherever you prefer to study.</h2>
+          <p>
+            Store and launch links will appear here first. Until then, every platform stays in coming-soon mode and
+            routes back to this launch section, except for the web app at
+            <a href="https://app.plannerpig.com/" target="_blank" rel="noreferrer noopener">app.plannerpig.com</a>.
+          </p>
+        </div>
+
+        <div class="platform-grid">
+          <a class="platform-card reveal" data-store="iphone" href="#platforms">
+            <span class="platform-name">iPhone</span>
+            <span class="platform-channel">App Store release</span>
+            <span class="platform-status">Coming soon</span>
+          </a>
+          <a class="platform-card reveal delay-1" data-store="android" href="#platforms">
+            <span class="platform-name">Android</span>
+            <span class="platform-channel">Google Play release</span>
+            <span class="platform-status">Coming soon</span>
+          </a>
+          <a class="platform-card reveal delay-2" data-store="windows" href="#platforms">
+            <span class="platform-name">Windows</span>
+            <span class="platform-channel">Desktop release</span>
+            <span class="platform-status">Coming soon</span>
+          </a>
+          <a class="platform-card reveal" data-store="mac" href="#platforms">
+            <span class="platform-name">Mac</span>
+            <span class="platform-channel">Desktop release</span>
+            <span class="platform-status">Coming soon</span>
+          </a>
+          <a class="platform-card reveal delay-1" data-store="web" href="#platforms">
+            <span class="platform-name">Web</span>
+            <span class="platform-channel">Browser app</span>
+            <span class="platform-status">Coming soon</span>
+          </a>
+        </div>
+
+        <div class="platform-note reveal delay-2">
+          <p>
+            The web version will live at
+            <a href="https://app.plannerpig.com/" target="_blank" rel="noreferrer noopener">app.plannerpig.com</a>.
+          </p>
+          <p>
+            Need early access, school rollout details, or partnership info?
+            <a href="mailto:plannerpig@trianglecarrot.com?subject=Planner%20Pig%20launch%20question">Email the team</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-contrast" id="faq">
+      <div class="section-shell">
+        <div class="section-heading reveal">
+          <p class="eyebrow">FAQ</p>
+          <h2>Quick answers before launch.</h2>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-item reveal">
+            <summary>What can I do in Planner Pig?</summary>
+            <p>
+              You can plan exams, build topic structures, generate study schedules, create task lists, update daily
+              progress, review charts and history, configure reminders, and share selected progress with buddies.
+            </p>
+          </details>
+          <details class="faq-item reveal delay-1">
+            <summary>Is the app just for mobile?</summary>
+            <p>
+              No. The launch website is designed around support for iPhone, Android, Windows, Mac, and Web so the core
+              experience can travel with you.
+            </p>
+          </details>
+          <details class="faq-item reveal delay-2">
+            <summary>How many exams can I set up?</summary>
+            <p>
+              Planner Pig supports planning multiple exams, each with its own topics, timetable rules, and progress
+              history.
+            </p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Will I be able to adjust my plan after I start?</summary>
+            <p>
+              Yes. Planner Pig is built for ongoing updates, including timetable changes, topic changes, rescheduling,
+              and catch-up actions when your study pattern shifts.
+            </p>
+          </details>
+          <details class="faq-item reveal delay-1">
+            <summary>How do I hear when it goes live?</summary>
+            <p>
+              Use the launch update contact link on this page and the team can share availability details as each
+              platform opens.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-shell">
+        <div class="cta-banner reveal">
+          <div>
+            <p class="eyebrow">Ready For Launch</p>
+            <h2>Planner Pig is getting ready to go live.</h2>
+            <p>
+              Follow the launch here for platform links, or get in touch now if you want early access or rollout
+              details for a school, tutor group, or study community.
+            </p>
+          </div>
+          <div class="cta-actions">
+            <a class="btn btn-primary" href="#platforms">Track launch status</a>
+            <a class="btn btn-secondary" href="mailto:plannerpig@trianglecarrot.com?subject=Planner%20Pig%20launch%20updates">Contact Planner Pig</a>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>© <span id="year"></span> Planner Pig. All rights reserved.</p>
+    <div class="footer-shell">
+      <div>
+        <a class="brand brand-footer" href="#top">
+          <img src="assets/images/plannerpig-logo.png" alt="Planner Pig wordmark" class="footer-logo">
+          <span class="brand-name">Planner Pig</span>
+        </a>
+        <p class="footer-copy">Cross-platform exam planning, progress tracking, and accountability tools.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#features">Features</a>
+        <a href="#showcase">Showcase</a>
+        <a href="#platforms">Platforms</a>
+        <a href="mailto:plannerpig@trianglecarrot.com">plannerpig@trianglecarrot.com</a>
+      </div>
+
+      <p class="footer-meta">© <span id="year"></span> Planner Pig. All rights reserved.</p>
+    </div>
   </footer>
 
   <script src="main.js"></script>
