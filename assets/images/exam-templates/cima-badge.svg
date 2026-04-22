@@ -1,0 +1,16 @@
+<svg width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="160" height="160" rx="34" fill="url(#bg)"/>
+  <rect x="18" y="18" width="124" height="124" rx="26" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.16)"/>
+  <path d="M48 105C56 93 68 85 82 85C96 85 108 93 116 105" stroke="#FFF0C2" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="82" cy="66" r="18" stroke="#FFF0C2" stroke-width="8"/>
+  <path d="M82 48V84" stroke="#FFF0C2" stroke-width="8" stroke-linecap="round"/>
+  <path d="M64 66H100" stroke="#FFF0C2" stroke-width="8" stroke-linecap="round"/>
+  <text x="80" y="42" text-anchor="middle" fill="#F9F5ED" font-family="Space Grotesk, Arial, sans-serif" font-size="28" font-weight="700" letter-spacing="2.4">CIMA</text>
+  <text x="80" y="130" text-anchor="middle" fill="#DDE4C3" font-family="Manrope, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="2">MANAGEMENT</text>
+  <defs>
+    <linearGradient id="bg" x1="18" y1="14" x2="144" y2="148" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#60753A"/>
+      <stop offset="1" stop-color="#3F4F22"/>
+    </linearGradient>
+  </defs>
+</svg>

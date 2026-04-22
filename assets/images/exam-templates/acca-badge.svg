@@ -1,0 +1,15 @@
+<svg width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="160" height="160" rx="34" fill="url(#bg)"/>
+  <rect x="20" y="24" width="120" height="112" rx="24" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.18)"/>
+  <path d="M46 106H114" stroke="#FFE2C4" stroke-width="8" stroke-linecap="round"/>
+  <path d="M56 92H104" stroke="#FFE2C4" stroke-width="8" stroke-linecap="round"/>
+  <path d="M66 78H94" stroke="#FFE2C4" stroke-width="8" stroke-linecap="round"/>
+  <text x="80" y="56" text-anchor="middle" fill="#FFF7EF" font-family="Space Grotesk, Arial, sans-serif" font-size="28" font-weight="700" letter-spacing="2.4">ACCA</text>
+  <text x="80" y="130" text-anchor="middle" fill="#FFD9BF" font-family="Manrope, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="2">ACCOUNTING</text>
+  <defs>
+    <linearGradient id="bg" x1="24" y1="12" x2="148" y2="150" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#9B4C41"/>
+      <stop offset="1" stop-color="#71352C"/>
+    </linearGradient>
+  </defs>
+</svg>

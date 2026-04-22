@@ -1,0 +1,14 @@
+<svg width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="160" height="160" rx="34" fill="url(#bg)"/>
+  <rect x="18" y="18" width="124" height="124" rx="26" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.16)"/>
+  <path d="M46 104L67 82L83 95L111 58" stroke="#FBE8B7" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="112" cy="58" r="8" fill="#FBE8B7"/>
+  <text x="80" y="54" text-anchor="middle" fill="#F8F5EE" font-family="Space Grotesk, Arial, sans-serif" font-size="34" font-weight="700" letter-spacing="3">CFA</text>
+  <text x="80" y="130" text-anchor="middle" fill="#B7D9D3" font-family="Manrope, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="2">INVESTMENT</text>
+  <defs>
+    <linearGradient id="bg" x1="18" y1="14" x2="146" y2="148" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#20444B"/>
+      <stop offset="1" stop-color="#12252A"/>
+    </linearGradient>
+  </defs>
+</svg>

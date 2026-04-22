@@ -1,0 +1,15 @@
+<svg width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="160" height="160" rx="34" fill="url(#bg)"/>
+  <rect x="18" y="18" width="124" height="124" rx="26" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.16)"/>
+  <path d="M51 107L67 88L82 96L109 58" stroke="#FFF3D5" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M45 57H73" stroke="#FFF3D5" stroke-width="8" stroke-linecap="round"/>
+  <path d="M45 71H63" stroke="#FFF3D5" stroke-width="8" stroke-linecap="round"/>
+  <text x="80" y="50" text-anchor="middle" fill="#FFF8F1" font-family="Space Grotesk, Arial, sans-serif" font-size="30" font-weight="700" letter-spacing="3">IMC</text>
+  <text x="80" y="130" text-anchor="middle" fill="#FFDDB2" font-family="Manrope, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="2">MARKETS</text>
+  <defs>
+    <linearGradient id="bg" x1="18" y1="12" x2="146" y2="148" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A05D33"/>
+      <stop offset="1" stop-color="#6B3B21"/>
+    </linearGradient>
+  </defs>
+</svg>

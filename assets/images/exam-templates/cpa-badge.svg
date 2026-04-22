@@ -1,0 +1,16 @@
+<svg width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="160" height="160" rx="34" fill="url(#bg)"/>
+  <rect x="18" y="18" width="124" height="124" rx="26" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.16)"/>
+  <path d="M48 106H112" stroke="#F8E5FF" stroke-width="8" stroke-linecap="round"/>
+  <path d="M60 92H100" stroke="#F8E5FF" stroke-width="8" stroke-linecap="round"/>
+  <path d="M70 78H90" stroke="#F8E5FF" stroke-width="8" stroke-linecap="round"/>
+  <path d="M54 54L68 40L82 54L96 40L110 54" stroke="#F8E5FF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="80" y="130" text-anchor="middle" fill="#E8D6FF" font-family="Manrope, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="2">LICENSURE</text>
+  <text x="80" y="68" text-anchor="middle" fill="#FFF7FF" font-family="Space Grotesk, Arial, sans-serif" font-size="30" font-weight="700" letter-spacing="3">CPA</text>
+  <defs>
+    <linearGradient id="bg" x1="16" y1="12" x2="148" y2="148" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#654A8D"/>
+      <stop offset="1" stop-color="#41315E"/>
+    </linearGradient>
+  </defs>
+</svg>
