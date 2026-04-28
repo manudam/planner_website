@@ -7,7 +7,9 @@ const STORE_CONFIG = {
   },
   android: {
     label: "Android",
-    url: "",
+    url: "https://play.google.com/store/apps/details?id=com.trianglecarrot.plannerpig",
+    liveLabel: "Live now",
+    liveAriaLabel: "Open Planner Pig on Google Play",
     pendingLabel: "Coming soon",
     pendingAriaLabel: "Android release coming soon",
   },
