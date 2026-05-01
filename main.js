@@ -1,7 +1,9 @@
 const STORE_CONFIG = {
   iphone: {
     label: "iPhone",
-    url: "",
+    url: "https://apps.apple.com/us/app/planner-pig/id1070913056",
+    liveLabel: "Live now",
+    liveAriaLabel: "Open Planner Pig on the App Store",
     pendingLabel: "Coming soon",
     pendingAriaLabel: "iPhone release coming soon",
   },
