@@ -35,6 +35,14 @@ const STORE_CONFIG = {
   },
 };
 
+function trackEvent(name, params = {}) {
+  if (typeof window.gtag !== "function") {
+    return;
+  }
+
+  window.gtag("event", name, params);
+}
+
 function setupStoreLinks() {
   const cards = document.querySelectorAll("[data-store]");
   const fallbackUrl = document.body.dataset.comingSoonUrl || "#platforms";
@@ -64,6 +72,13 @@ function setupStoreLinks() {
       }
 
       card.setAttribute("aria-label", config.liveAriaLabel || `Open ${config.label}`);
+      card.addEventListener("click", () => {
+        trackEvent("select_content", {
+          content_type: "platform_card",
+          item_id: key,
+          item_name: config.label,
+        });
+      });
 
       return;
     }
@@ -100,6 +115,21 @@ function setupNavigation() {
     link.addEventListener("click", () => {
       toggle.setAttribute("aria-expanded", "false");
       nav.classList.remove("is-open");
+    });
+  });
+}
+
+function setupAnalytics() {
+  const outboundLinks = document.querySelectorAll(
+    'a[href^="https://app.plannerpig.com/"], a[href^="https://play.google.com/"], a[href^="https://apps.apple.com/"], a[href^="mailto:"]',
+  );
+
+  outboundLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      trackEvent("click", {
+        link_url: link.href,
+        link_text: link.textContent.trim(),
+      });
     });
   });
 }
@@ -146,5 +176,6 @@ function setYear() {
 
 setupStoreLinks();
 setupNavigation();
+setupAnalytics();
 setupReveal();
 setYear();
