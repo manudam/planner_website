@@ -4,6 +4,7 @@ This folder contains the static marketing website for `www.plannerpig.com`.
 
 ## Files
 - `index.html`: Main launch and Planner Pig showcase page
+- `blog/`: Study articles and case studies
 - `coming-soon.html`: Redirect alias to the main page
 - `robots.txt` / `sitemap.xml`: Crawl and discovery files for search engines
 - `styles.css`: Layout, components, motion, and responsive styles
@@ -13,6 +14,7 @@ This folder contains the static marketing website for `www.plannerpig.com`.
 ## SEO assets
 - `assets/images/plannerpig-social-card.png`: Default social sharing image used by Open Graph and Twitter cards
 - `assets/images/screen-*-720.webp` / `assets/images/screen-*-960.webp`: Optimized website screenshot variants used in the landing page
+- `assets/images/blog/*`: Blog article thumbnails
 
 ## Publish platform links when live
 Update `main.js` with the official URLs inside `STORE_CONFIG`:
