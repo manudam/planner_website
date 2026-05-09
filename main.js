@@ -23,9 +23,9 @@ const STORE_CONFIG = {
   },
   mac: {
     label: "Mac",
-    url: "",
-    pendingLabel: "Coming soon",
-    pendingAriaLabel: "Mac release coming soon",
+    url: "https://apps.apple.com/us/app/planner-pig/id1070913056?mt=12",
+    liveLabel: "Live now",
+    liveAriaLabel: "Open Planner Pig for Mac on the App Store",
   },
   web: {
     label: "Web",

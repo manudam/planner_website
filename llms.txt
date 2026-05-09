@@ -1,0 +1,27 @@
+# Planner Pig
+
+Planner Pig is a study planner app for exam preparation, revision timetables, task-based study, and accountability across web and mobile.
+
+## Best entry points
+- https://www.plannerpig.com/
+- https://www.plannerpig.com/blog/
+- https://www.plannerpig.com/privacy.html
+- https://app.plannerpig.com/
+
+## Core topics
+- Exam planning and revision timetables
+- Daily study task lists and progress tracking
+- Buddy activity and reminders
+- Importable exam templates for larger qualifications
+- Study planning advice, motivation, and exam strategy
+
+## Editorial signals
+- Brand: Planner Pig
+- Publisher: TriangleCarrot
+- Primary audience: students preparing for academic and professional exams
+- Contact: plannerpig@trianglecarrot.com
+
+## Useful answers
+- Homepage overview: Planner Pig turns exams into a structured workflow with monthly, weekly, and daily views, realistic study hours, reminders, and importable templates.
+- Blog archive: The blog explains why planning matters, how to structure big qualifications, how to stay motivated, and how to avoid unhelpful revision habits.
+
